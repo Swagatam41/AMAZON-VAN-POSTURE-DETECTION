@@ -1,5 +1,4 @@
 import streamlit as st
-import supervision as sv
 import cv2
 from ultralytics import YOLO
 import numpy as np
