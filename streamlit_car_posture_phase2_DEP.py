@@ -13,7 +13,7 @@ def process_image(image_path):
 
     # Load the model to detect truck parts
     progress.progress(25)
-    model = YOLO(r'C:\Users\SwagatamRoy\Downloads\CAR POSTURE DETECT_oct_2024\trial3\best_discussed_with_TEAM_then_trained_14thoct_2024.pt')
+    model = YOLO('best_discussed_with_TEAM_then_trained_14thoct_2024.pt')
     results = model.predict(image_path, conf=0.085, line_width=2)
     
     # Extract detection information
